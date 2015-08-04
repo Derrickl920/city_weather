@@ -6,8 +6,6 @@ var bodyparser = require('body-parser');
 app.use(bodyparser.urlencoded());
 app.use(bodyparser.json());
 
-// require('./config/mongoose.js');
-// require('./config/routes.js')(app);
 
 app.use(express.static(path.join(__dirname,'/')));
 app.listen(8000, function(){
