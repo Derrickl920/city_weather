@@ -8,6 +8,6 @@ app.use(bodyparser.json());
 
 
 app.use(express.static(path.join(__dirname,'/')));
-app.listen(8000, function(){
-	console.log('running on port 8000');
+var server = app.listen(process.env.PORT || 8000, function() {
+ console.log("listening on port 8000");
 })
