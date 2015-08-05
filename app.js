@@ -39,7 +39,7 @@ function addZero(i) {
     }
     return i;
 }
-var day = currentdate.getDay();
+var day = currentdate.getDate();
 var month = new Array();
 month[0] = "JAN";
 month[1] = "FEB";
